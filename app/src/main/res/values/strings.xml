@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DigitalTurbine</string>
+    <string name="homeScreen">Available in home screen</string>
+    <string name="rateImg">rate Image</string>
+    <string name="appImg">App image</string>
+    <string name="tempAppDesc">this is a description for this app</string>
+    <string name="tempAppName">App Name</string>
+    <string name="tempRateCount">0000000</string>
+    <string name="tempRate">0.0</string>
+    <string name="tempCategory">Category</string>
+    <string name="minOsVersion">min OS version</string>
+    <string name="tempBidRate">bid rate</string>
+    <string name="tempCallAction">call action</string>
+</resources>

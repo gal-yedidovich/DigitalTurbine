@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/appImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rateImg"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/rateImg"
+        android:src="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/tempAppName"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/rateImg"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/thumbnail"
+        app:layout_constraintTop_toTopOf="@id/thumbnail" />
+
+    <TextView
+        android:id="@+id/descTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/tempAppDesc"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/rateImg"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/nameTxt"
+        app:layout_constraintTop_toBottomOf="@id/nameTxt" />
+
+    <TextView
+        android:id="@+id/countTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tempRateCount"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/rateImg"
+        app:layout_constraintStart_toStartOf="@id/rateImg" />
+
+    <TextView
+        android:id="@+id/isHomeScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="@string/homeScreen"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/thumbnail" />
+
+    <TextView
+        android:id="@+id/rateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tempRate"
+        app:layout_constraintEnd_toEndOf="@id/rateImg"
+        app:layout_constraintTop_toBottomOf="@id/rateImg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/isHomeScreen" />
+</android.support.constraint.ConstraintLayout>
